@@ -1,0 +1,126 @@
+﻿<Window x:Class="WPF_Learn.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Learn"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <!--<Grid.RowDefinitions>
+            --><!--高度三种定义方式，宽度类似
+                第一行无高度，auto自适应会自动隐藏
+                设定绝对高度
+                按比例设定，2*就是首行是下面的两倍--><!--
+            <RowDefinition Height="2*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        
+        <Border Background="Red" />
+        <Border Grid.Column="1" Background="Yellow"/>
+        <Border Grid.Row="1" Background="Blue"/>
+        <Border Grid.Row="1" Grid.Column="1" Background="Green"/>
+
+        
+        --><!--跨行跨列--><!--
+        <Border 
+                Background="Red" 
+                Grid.ColumnSpan="2"
+                Grid.RowSpan="2"/>
+
+        --><!--stackPanel 是局部容器，用于修饰控件元素排布
+        Orientation控制排列方向--><!--
+        <StackPanel Orientation="Horizontal">
+            <Button Width="100" Height="40"/>
+            <Button Width="100" Height="40"/>
+            <Button Width="100" Height="40"/>
+            <Button Width="100" Height="40"/>
+            <Button Width="100" Height="40"/>
+            <Button Width="100" Height="40"/>
+            <Button Width="100" Height="40"/>
+        </StackPanel>
+
+        --><!--wrapPanel有一个特征，默认水平排列,流式排布--><!--
+        <WrapPanel Grid.Row="1" Orientation="Vertical">
+            <Button Width="100" Height="40"/>
+            <Button Width="100" Height="40"/>
+            <Button Width="100" Height="40"/>
+            <Button Width="100" Height="40"/>
+            <Button Width="100" Height="40"/>
+            <Button Width="100" Height="40"/>
+            <Button Width="100" Height="40"/>
+        </WrapPanel>
+        
+        --><!--DockPanel有停靠功能，位于其中的元素可以设置方向,最后一个元素根据不同的设置停靠位置不同--><!--
+        <DockPanel LastChildFill="False">
+            <Button Width="100" Height="40" DockPanel.Dock="Left"/>
+            <Button Width="100" Height="40" DockPanel.Dock="Top"/>
+            <Button Width="100" Height="40" DockPanel.Dock="Right"/>
+            <Button Width="100" Height="40" DockPanel.Dock="Bottom"/>
+        </DockPanel>
+        
+        
+        --><!--uniformGrid,也有行列之分,根据数量自动均分--><!--
+        <UniformGrid>
+            <Button/>
+            <Button/>
+            <Button/>
+            <Button/>
+            <Button/>
+            <Button/>
+            <Button/>
+            <Button/>
+            <Button/>
+        </UniformGrid>-->
+        
+        
+        
+        <!--所有布局容器可以嵌套 - 实战-->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Border Background="MediumPurple"/>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Border Background="PaleVioletRed"/>
+
+            <Grid Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.5*"/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <!--内容使用局部容器-->
+                <Border Margin="5" Background="BlueViolet"/>
+                <Border Margin="5" Background="Brown" Grid.Column="1"/>
+                <Border Margin="5" Background="LawnGreen" Grid.Column="2"/>
+                <Border Margin="5" Background="Purple" Grid.Column="3"/>
+                <Border Margin="5" Background="CadetBlue" Grid.Column="4"/>
+
+                <Border Margin="5" Background="OrangeRed" Grid.Row="1" Grid.ColumnSpan="3"/>
+                <Border Margin="5" Background="GreenYellow" Grid.Row="1"  Grid.Column="3" Grid.ColumnSpan="2"/>
+                <Border Margin="5" Background="CadetBlue" Grid.Row="2" Grid.ColumnSpan="3"/>
+                <Border Margin="5" Background="LawnGreen" Grid.Row="2" Grid.Column="3" Grid.ColumnSpan="2"/>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>
