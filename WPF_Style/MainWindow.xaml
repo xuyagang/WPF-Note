@@ -41,9 +41,9 @@
 
             
             <!--方式一：直接赋予style--><!--
-            <Button Content="Button1" FontSize="18" Foreground="White" Background="Red"/>
-            <Button Content="Button1" FontSize="18" Foreground="White" Background="Red"/>
-            <Button Content="Button1" FontSize="18" Foreground="White" Background="Red"/>-->
+            <Button Content="Button1" FontSize="20" Foreground="White" Background="Red"/>
+            <Button Content="Button1" FontSize="20" Foreground="White" Background="Red"/>
+            <Button Content="Button1" FontSize="20" Foreground="White" Background="Red"/>-->
         </StackPanel>
     </Grid>
 </Window>
