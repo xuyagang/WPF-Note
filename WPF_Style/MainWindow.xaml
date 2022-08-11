@@ -19,7 +19,7 @@
             <!--通常用于设置公共属性-->
             <Setter Property="FontSize" Value="18"/>
             <Setter Property="Foreground" Value="White"/>
-            <Setter Property="Background" Value="Red"/>
+            <Setter Property="Background" Value="Brown"/>
         </Style>
         
         <!--继承父级样式-->
