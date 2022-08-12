@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_Style", "WPF_Style\WPF_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_控件模板", "WPF_控件模板\WPF_控件模板.csproj", "{7A55D2E3-1C7C-4CF6-99D3-3B2C2FF76F41}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_数据模板", "WPF_数据模板\WPF_数据模板.csproj", "{34E20F56-A8DE-42C0-9AAF-8B4B6CF1648E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{7A55D2E3-1C7C-4CF6-99D3-3B2C2FF76F41}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A55D2E3-1C7C-4CF6-99D3-3B2C2FF76F41}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A55D2E3-1C7C-4CF6-99D3-3B2C2FF76F41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34E20F56-A8DE-42C0-9AAF-8B4B6CF1648E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34E20F56-A8DE-42C0-9AAF-8B4B6CF1648E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34E20F56-A8DE-42C0-9AAF-8B4B6CF1648E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34E20F56-A8DE-42C0-9AAF-8B4B6CF1648E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
