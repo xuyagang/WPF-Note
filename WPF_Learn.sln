@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_Binding", "WPF_Binding\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_Command", "WPF_Command\WPF_Command.csproj", "{671CFA80-CFE1-4E4F-9641-B5F5F248343C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "极客学院_内容控件", "极客学院_内容控件\极客学院_内容控件.csproj", "{A2C6AFB3-FCE2-4CD0-97DA-D5D8493D1279}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "极客学院_MenuControls", "极客学院_MenuControls\极客学院_MenuControls.csproj", "{AB16EBD9-0552-4F0D-9208-E78FB28D45B0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{671CFA80-CFE1-4E4F-9641-B5F5F248343C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{671CFA80-CFE1-4E4F-9641-B5F5F248343C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{671CFA80-CFE1-4E4F-9641-B5F5F248343C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2C6AFB3-FCE2-4CD0-97DA-D5D8493D1279}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2C6AFB3-FCE2-4CD0-97DA-D5D8493D1279}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2C6AFB3-FCE2-4CD0-97DA-D5D8493D1279}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2C6AFB3-FCE2-4CD0-97DA-D5D8493D1279}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB16EBD9-0552-4F0D-9208-E78FB28D45B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB16EBD9-0552-4F0D-9208-E78FB28D45B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB16EBD9-0552-4F0D-9208-E78FB28D45B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB16EBD9-0552-4F0D-9208-E78FB28D45B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

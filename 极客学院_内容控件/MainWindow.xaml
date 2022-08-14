@@ -1,0 +1,77 @@
+﻿<Window x:Class="极客学院_内容控件.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:极客学院_内容控件"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <!--Button 相关-->
+            <!--<Button Content="Normal Buttton" Height="20" Width="100" Click="Button_Click"/>
+
+            <Button Height="20" Width="100">Normal Button
+            </Button>
+
+            <Button>
+                <Button.Content>
+                    <StackPanel>
+                        <TextBlock Text="Text1"/>
+                        <TextBlock Text="Text2"/>
+                    </StackPanel>
+                </Button.Content>
+            </Button>-->
+            
+            
+            
+            <!--RepeatButton ,Dealy-延时(毫秒单位)  Interval-触发间隔-->
+            <RepeatButton Content="RepeatButton" Delay="2000" Interval="1000" Click="RepeatButton_Click"/>
+            
+            
+            
+            <!--ToggleButton-->
+            <ToggleButton Content="ToggleButton" IsThreeState="True" Click="ToggleButton_Click" 
+                          Checked="ToggleButton_Checked"
+                          Unchecked="ToggleButton_Unchecked"
+                          Indeterminate="ToggleButton_Indeterminate"/>
+
+            
+            
+            <RadioButton GroupName="Sex" IsChecked="True" Content="男"/>
+            <RadioButton GroupName="Sex" Content="女"/>
+            <RadioButton GroupName="Group1" Content="Group1"/>
+            <RadioButton GroupName="Group1" Content="Group2"/>
+
+
+
+            <Label Content="Label" Target="{Binding ElementName=tb}"/>
+            <!--button 作为 label 的内容-->
+            <Label>
+                <Button Content="ButtonLabel"/>
+            </Label>
+
+            <TextBox Name="tb"/>
+
+
+            <GroupBox Header="性别">
+                <StackPanel>
+                    <RadioButton Content="男"/>
+                    <RadioButton Content="女"/>
+                </StackPanel>
+            </GroupBox>
+
+
+            <Expander IsExpanded="False" Header="性别" ExpandDirection="Left" 
+                      Expanded="Expander_Expanded"
+                      Collapsed="Expander_Collapsed">
+                <StackPanel>
+                    <RadioButton Content="男"/>
+                    <RadioButton Content="女"/>
+                </StackPanel>
+            </Expander>
+            
+
+        </StackPanel>
+    </Grid>
+</Window>
