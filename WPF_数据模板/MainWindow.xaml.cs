@@ -33,13 +33,17 @@ namespace WPF_数据模板
             //listTest.ItemsSource = listNum;
             grid.ItemsSource = listNum;
 
-            // 批量赋值测试
+
+            ////批量赋值测试
             //List<int> listNum = new List<int>();
             //for (int i = 0; i < 10; i++)
             //{
             //    listNum.Add(i);
             //}
             //listTest.ItemsSource = listNum;
+
+
+
 
 
             // 以下写法需要淘汰

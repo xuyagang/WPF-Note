@@ -7,18 +7,21 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <!--<ListBox x:Name="listTest">-->
-            <!--<ListBox.ItemTemplate>
+        <!--<ListBox x:Name="listTest">
+            <ListBox.ItemTemplate>
+                --><!--数据模板--><!--
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
                         <Border Width="10" Height="10" Background="{Binding Code}"/>
                         <TextBlock Margin="10,0" Text="{Binding Name}"/>
                     </StackPanel>
                 </DataTemplate>
-            </ListBox.ItemTemplate>-->
-            
-            
-            
+            </ListBox.ItemTemplate>
+        </ListBox>-->
+
+        
+        
+        <!--<ListBox x:Name="listTest">-->
             <!--<ListBoxItem>
                 <StackPanel Orientation="Horizontal">  --><!--容器--><!--
                     <Border Width="10" Height="10" Background="Red"/>
@@ -39,39 +42,43 @@
                     <TextBlock Margin="10.0" Text="Green"/>
                 </StackPanel>
             </ListBoxItem>-->
-            
-            
         <!--</ListBox>-->
 
+        
+        
+        
 
+        <ListBox>
+            <DataGrid x:Name="grid" AutoGenerateColumns="False" CanUserAddRows="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Binding="{Binding Code}" Header="Code"/>
+                    <DataGridTextColumn Binding="{Binding Name}" Header="Name"/>
 
+                    <DataGridTextColumn Header="操作"/>
 
-        <DataGrid x:Name="grid" AutoGenerateColumns="False" CanUserAddRows="False">
-            <DataGrid.Columns>
-                <DataGridTextColumn Binding="{Binding Code}" Header="Code"/>
-                <DataGridTextColumn Binding="{Binding Name}" Header="Name"/>
-                
-                <!--<DataGridTextColumn Header="操作"/>-->
+                    <DataGridTemplateColumn Header="操作">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <!--数据模板-->
+                            <DataTemplate>
+                                <!--<StackPanel Orientation="Horizontal">
+                                    <Border Width="10" Height="10" Background="{Binding Code}"/>
+                                    <TextBlock Margin="10" Text="{Binding Name}"/>
+                                </StackPanel>-->
 
-                <DataGridTemplateColumn Header="操作">
-                    <DataGridTemplateColumn.CellTemplate>
-                        <DataTemplate>
-                            <!--<StackPanel Orientation="Horizontal">
-                                <Border Width="10" Height="10" Background="{Binding Code}"/>
-                                <TextBlock Margin="10" Text="{Binding Name}"/>
-                            </StackPanel>-->
+                                <!--里面只允许一个元素存在，所以需要一个容器来包裹-->
+                                <StackPanel Orientation="Horizontal">
+                                    <Button Content="删除"/>
+                                    <Button Content="复制"/>
+                                    <Button Content="保存"/>
+                                </StackPanel>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+        </ListBox>
 
-                            <!--里面只允许一个元素存在，所以需要一个容器来包裹-->
-                            <StackPanel Orientation="Horizontal">
-                                <Button Content="删除"/>
-                                <Button Content="复制"/>
-                                <Button Content="保存"/>
-                            </StackPanel>
-                        </DataTemplate>
-                    </DataGridTemplateColumn.CellTemplate>
-                </DataGridTemplateColumn>
-            </DataGrid.Columns>
-        </DataGrid>
+        
         
     </Grid>
 </Window>

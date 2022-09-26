@@ -8,24 +8,31 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <!--<StackPanel>
-            --><!--通过滑块动态更新文本框-->
-                <!--方法一：事件--><!--
+            --><!--通过滑块动态更新三个文本框-->
+                <!--方法一：事件（当值发生变化的时候，触发事件，事件内可以进行赋值操作）-->
+            <!--要给控件赋值，就需要给控件定义名字，相当于给实例命名--><!--
             <Slider x:Name="slider" Margin="5" ValueChanged="Slider_ValueChanged"/>
             <TextBox x:Name="textbox1" Margin="5" Height="30" TextChanged="textbox1_TextChanged"/>
             <TextBox x:Name="textbox2" Margin="5" Height="30"/>
             <TextBox x:Name="textbox3" Margin="5" Height="30"/>
         </StackPanel>-->
         
-        <!--方法二：控件与控件之间的绑定，控件与业务代码 属性，避免事件代码-->
-        <!--<StackPanel>
+        
+        
+        <!--方法二：控件与控件之间的绑定，控件与业务代码 属性，避免事件代码--><!--
+        <StackPanel>
             <Slider x:Name="slider" Margin="5" />
-            <TextBox Margin="5" Height="30" Text="{Binding ElementName=slider,Path=Value}"/>
+            --><!--ElementName-是要绑定数据的对象, Path-是指定要绑定的对象属性--><!--
+            <TextBox Margin="5" Height="30" Text="{Binding ElementName=slider, Path=Value}"/>
             <TextBox Margin="5" Height="30" Text="{Binding ElementName=slider,Path=Value, Mode=OneWay}"/>
             <TextBox Margin="5" Height="30" Text="{Binding ElementName=slider,Path=Value,Mode=OneWayToSource}"/>
         </StackPanel>-->
 
 
 
-        <Button Command="{Binding ShowCommand}" Width="100" Height="20"/>
+        <TextBox Height="30" Margin="5" Text="{Binding Name}">
+            
+        </TextBox>
+       
     </Grid>
 </Window>

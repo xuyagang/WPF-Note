@@ -26,13 +26,13 @@ namespace WPF_Binding
 
             this.DataContext = new MainViewModel();
             MainViewModel test = new MainViewModel();
-            
 
-            // 创建绑定上下文
-            //this.DataContext = new Test()
-            //{
-            //    Name = "张三"
-            //};
+
+            //创建绑定上下文
+            this.DataContext = new Test()
+            {
+                Name = "张三"
+            };
 
         }
 
@@ -41,14 +41,22 @@ namespace WPF_Binding
             MessageBox.Show("点击了按钮！");
         }
 
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+
+        //// 方法一：
         //private void Slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         //{
-        //    // 可以在这里写赋值操作，但控件要指定名字
+        //    // 方法一：事件（可以在这里写赋值操作，但控件要指定名字）
         //    textbox1.Text = slider.Value.ToString();
         //    textbox2.Text = slider.Value.ToString();
         //    textbox3.Text = slider.Value.ToString();
         //}
 
+        //// 方法一：
         //private void textbox1_TextChanged(object sender, TextChangedEventArgs e)
         //{
         //    if (double.TryParse(textbox1.Text, out double value))
