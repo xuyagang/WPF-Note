@@ -50,6 +50,7 @@ namespace 极客学院_Binding
 
         }
 
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             int number = new Random().Next(100);
