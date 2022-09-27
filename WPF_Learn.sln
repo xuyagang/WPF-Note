@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "极客学院_MenuControls",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "极客学院_Binding", "极客学院_Binding\极客学院_Binding.csproj", "{26CCA271-E458-43B7-AEAD-E6FB11EACA2F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_INotifyPropertyChanged", "WPF_INotifyPropertyChanged\WPF_INotifyPropertyChanged.csproj", "{866C3125-63C9-4E57-81E7-808EDA7969A8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{26CCA271-E458-43B7-AEAD-E6FB11EACA2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26CCA271-E458-43B7-AEAD-E6FB11EACA2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26CCA271-E458-43B7-AEAD-E6FB11EACA2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{866C3125-63C9-4E57-81E7-808EDA7969A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{866C3125-63C9-4E57-81E7-808EDA7969A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{866C3125-63C9-4E57-81E7-808EDA7969A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{866C3125-63C9-4E57-81E7-808EDA7969A8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -10,7 +10,7 @@ namespace WPF_Command
     public class MyCommand : ICommand
     {
         Action executeAction;
-        // 把业务代码函数传入接口
+        // 为了让命令调用具体的行为，这里需要实现构造函数，传入一个委托
         public MyCommand(Action action)
         {
             executeAction = action;

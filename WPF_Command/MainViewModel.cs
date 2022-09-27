@@ -8,14 +8,26 @@ using System.Windows;
 
 namespace WPF_Command
 {
-    // 后台程序
+    // 外部程序
     public class MainViewModel : ViewModelBase
     {
+        public MyCommand ShowCommand { get; set; }
+
         public MainViewModel()
         {
             Name = "Hello";
             ShowCommand = new MyCommand(Show);
         }
+
+        public void Show()
+        {
+            Name = "点击了按钮!";
+            Title = "我是标题";
+            MessageBox.Show(Name);
+        }
+
+
+
 
         private string name;
         public string Name
@@ -45,15 +57,10 @@ namespace WPF_Command
 
 
 
-        public MyCommand ShowCommand { get; set; }
+       
 
 
-        public void Show()
-        {
-            Name = "点击了按钮!";
-            Title = "我是标题";
-            MessageBox.Show(Name);
-        }
+
 
         //public event PropertyChangedEventHandler PropertyChanged;
     }
