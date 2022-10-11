@@ -32,7 +32,8 @@ namespace 极客学院_Binding
             this.DataContext = stu;
 
 
-            //// 绑定对象
+            // 方式一的语句
+            // 绑定对象
             //Binding stuNameBd = new Binding();
             //stuNameBd.Source = stu;
             //stuNameBd.Path = new PropertyPath("Name");   // 绑定路径
