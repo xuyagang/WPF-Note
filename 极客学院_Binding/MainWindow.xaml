@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:极客学院_Binding"
+        xmlns:loc="clr-namespace:极客学院_Binding"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
@@ -21,6 +21,7 @@
                 <TextBox Name="tbAge" Text="{Binding Age}" Width="200" BorderBrush="Silver" BorderThickness="1"></TextBox>
             </WrapPanel>
             <Button Click="Button_Click" Height="20" >Change</Button>
+            <loc:UserControlTest></loc:UserControlTest>
         </StackPanel>
     </Grid>
 </Window>
