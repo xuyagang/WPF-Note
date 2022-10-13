@@ -28,7 +28,7 @@ namespace 极客学院_Binding_集合对象
             // 定义数据源
             List<Student> StudentList = new List<Student>();
             // 创建数据实例
-            for (int i = 0; i <10; i++)
+            for (int i = 0; i < 10; i++)
             {
                 var stu = new Student()
                 {

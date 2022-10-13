@@ -7,10 +7,23 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        
+        
         <!--设置数据源绑定数据上下文-->
-        <DataGrid AutoGenerateColumns="True" IsReadOnly="True" ItemsSource="{Binding}"
+        <DataGrid AutoGenerateColumns="True" IsReadOnly="False" ItemsSource="{Binding}"
                   Height="400">
-            
         </DataGrid>
+        <!--binding后不写东西默认绑定到datacontext,这里继承自UserControl-->
+        <ListView Grid.Column="1" ItemsSource="{Binding}">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="姓名" DisplayMemberBinding="{Binding Name}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
     </Grid>
 </Window>
