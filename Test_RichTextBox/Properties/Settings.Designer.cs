@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace BD_FlowContent.Properties
+namespace Test_RichTextBox.Properties
 {
 
 

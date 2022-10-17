@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6EAB1263-29BC-45A2-8034-F7A8916824CB}</ProjectGuid>
+    <ProjectGuid>{8A625B5E-933E-43B7-BB0F-4007F83C009B}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>BD_FlowContent</RootNamespace>
-    <AssemblyName>BD_FlowContent</AssemblyName>
+    <RootNamespace>Test_RichTextBox</RootNamespace>
+    <AssemblyName>Test_RichTextBox</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
