@@ -1,0 +1,24 @@
+﻿<Window x:Class="A_WPF拖放功能_图片文字.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:A_WPF拖放功能_图片文字"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBox Name="source" Grid.Row="0" Background="Purple" Foreground="White" MouseDown="source_MouseDown">博客园:www.cnblogs.com</TextBox>
+        <Image Source="http://static.cnblogs.com/images/logo_small.gif" Grid.Column="1" Stretch="None" MouseDown="Image_MouseDown"></Image>
+        <Label Name="target" Grid.Row="1" Background="YellowGreen" AllowDrop="True" Drop="OnDrop">文本拖到这里</Label>
+        <Image Name="targetImg" Grid.Row="1" Grid.Column="1" AllowDrop="True" Drop="targetImg_Drop_1" Stretch="None" Source="http://www.baidu.com/img/baidu_sylogo1.gif"></Image>
+
+    </Grid>
+</Window>

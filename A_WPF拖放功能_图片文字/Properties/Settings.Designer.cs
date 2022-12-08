@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Test_RichTextBox.Properties
+namespace A_WPF拖放功能_图片文字.Properties
 {
 
 

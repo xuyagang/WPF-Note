@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace Test_RichTextBox
+namespace A_WPF窗体接受外部文件
 {
     /// <summary>
     /// App.xaml 的交互逻辑
