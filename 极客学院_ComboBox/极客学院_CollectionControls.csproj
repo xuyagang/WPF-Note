@@ -55,17 +55,33 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="DataGirdUserControl1.xaml.cs">
+      <DependentUpon>DataGirdUserControl1.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ListBoxUserControl.xaml.cs">
       <DependentUpon>ListBoxUserControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="ListViewUserControl.xaml.cs">
       <DependentUpon>ListViewUserControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="StatusBarUserControl1.xaml.cs">
+      <DependentUpon>StatusBarUserControl1.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Student.cs" />
     <Compile Include="TabControlUserControl1.xaml.cs">
       <DependentUpon>TabControlUserControl1.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ToolBarUserControl1.xaml.cs">
+      <DependentUpon>ToolBarUserControl1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TreeViewUserControl1.xaml.cs">
+      <DependentUpon>TreeViewUserControl1.xaml</DependentUpon>
+    </Compile>
     <Page Include="ComboBoxUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DataGirdUserControl1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -92,7 +108,19 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="StatusBarUserControl1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="TabControlUserControl1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ToolBarUserControl1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TreeViewUserControl1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
