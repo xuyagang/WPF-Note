@@ -11,7 +11,9 @@
         
         <!--<loc:ListBoxUserControl></loc:ListBoxUserControl>-->
 
-        <loc:ListViewUserControl></loc:ListViewUserControl>
+        <!--<loc:ListViewUserControl></loc:ListViewUserControl>-->
+
+        <loc:TabControlUserControl1></loc:TabControlUserControl1>
         
     </Grid>
 </Window>

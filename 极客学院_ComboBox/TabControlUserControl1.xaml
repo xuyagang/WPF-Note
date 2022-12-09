@@ -8,11 +8,21 @@
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid Background="White">
         <TabControl TabStripPlacement="Left">
-            <TabItem Header="Tab1"></TabItem>
-            <TabItem Header="Tab2"></TabItem>
-            <TabItem Header="Tab3"></TabItem>
-            <TabItem Header="Tab4"></TabItem>
-            <TabItem Header="Tab5"></TabItem>
+            <TabItem Header="Tab1">
+                <TextBlock>111</TextBlock>
+            </TabItem>
+            <TabItem Header="Tab2" IsSelected="True">
+                <TextBlock>222</TextBlock>
+            </TabItem>
+            <TabItem Header="Tab3">
+                <TextBlock>333</TextBlock>
+            </TabItem>
+            <TabItem Header="Tab4">
+                <TextBlock>444</TextBlock>
+            </TabItem>
+            <TabItem Header="Tab5">
+                <TextBlock>555</TextBlock>
+            </TabItem>
         </TabControl>
     </Grid>
 </UserControl>
