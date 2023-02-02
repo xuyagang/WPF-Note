@@ -1,0 +1,55 @@
+﻿<UserControl x:Class="极客学院_CollectionControls.ListViewUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+
+    <!--定义了两个view-->
+    <UserControl.Resources>
+        <GridView x:Key="View0">
+            <!--添加名称列-->
+            <GridViewColumn Header="姓名" DisplayMemberBinding="{Binding Name}"></GridViewColumn>
+            <GridViewColumn Header="年龄" DisplayMemberBinding="{Binding Age}"></GridViewColumn>
+            <GridViewColumn Header="性别" DisplayMemberBinding="{Binding Sex}"></GridViewColumn>
+            <GridViewColumn Header="地址" DisplayMemberBinding="{Binding Address}"></GridViewColumn>
+        </GridView>
+        <GridView x:Key="View1">
+            <GridViewColumn Header="姓名" DisplayMemberBinding="{Binding Name}"></GridViewColumn>
+            <GridViewColumn Header="年龄" DisplayMemberBinding="{Binding Age}"></GridViewColumn>
+            <GridViewColumn Header="性别" DisplayMemberBinding="{Binding Sex}"></GridViewColumn>
+        </GridView>
+    </UserControl.Resources>
+    
+    
+    <Grid Background="White">
+        <DockPanel>
+            <CheckBox DockPanel.Dock="Top" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked">切换视图</CheckBox>
+            <TextBlock DockPanel.Dock="Top">学生列表：</TextBlock>
+            <ListView Name="listView" ItemsSource="{Binding students}" View="{StaticResource View1}">
+                <!--方式一-->
+                <!--<ListViewItem>
+                    <TextBlock>张三</TextBlock>
+                </ListViewItem>
+                <ListViewItem>
+                    <TextBlock>李四</TextBlock>
+                </ListViewItem>
+                <ListViewItem>
+                    <TextBlock>王五</TextBlock>
+                </ListViewItem>-->
+                
+                <!--方式二-->
+                <!--<ListView.View>
+                    <GridView>
+                        --><!--添加名称列--><!--
+                        <GridViewColumn Header="姓名" DisplayMemberBinding="{Binding Name}"></GridViewColumn>
+                        <GridViewColumn Header="年龄" DisplayMemberBinding="{Binding Age}"></GridViewColumn>
+                        <GridViewColumn Header="性别" DisplayMemberBinding="{Binding Sex}"></GridViewColumn>
+                        <GridViewColumn Header="地址" DisplayMemberBinding="{Binding Address}"></GridViewColumn>
+                    </GridView>
+                </ListView.View>-->
+            </ListView>
+        </DockPanel>
+    </Grid>
+</UserControl>

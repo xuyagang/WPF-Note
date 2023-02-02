@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace BD_FlowContent.Properties
+namespace A_WPF拖放功能_图片文字.Properties
 {
 
 
