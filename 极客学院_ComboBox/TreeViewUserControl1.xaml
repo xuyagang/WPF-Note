@@ -19,7 +19,7 @@
             <!--方式二 - 添加子级项数据模板：-->
             <TreeView.ItemTemplate>
                 <HierarchicalDataTemplate ItemsSource="{Binding Children}">
-                    <TextBlock Text="{Binding Name}"></TextBlock>
+                    <CheckBox Content="{Binding Name}"></CheckBox>
                 </HierarchicalDataTemplate>
             </TreeView.ItemTemplate>
             

@@ -9,7 +9,7 @@
     <Grid>
         <!--<loc:ComboBoxUserControl></loc:ComboBoxUserControl>-->
         
-        <!--<loc:ListBoxUserControl></loc:ListBoxUserControl>-->
+        <loc:ListBoxUserControl></loc:ListBoxUserControl>
 
         <!--<loc:ListViewUserControl></loc:ListViewUserControl>-->
 
@@ -21,7 +21,7 @@
 
         <!--<loc:ToolBarUserControl1></loc:ToolBarUserControl1>-->
 
-        <loc:StatusBarUserControl1></loc:StatusBarUserControl1>
+        <!--<loc:StatusBarUserControl1></loc:StatusBarUserControl1>-->
         
     </Grid>
 </Window>

@@ -10,7 +10,10 @@
         <DockPanel>
             <TextBlock DockPanel.Dock="Top">学生列表:</TextBlock>
             <ListBox ItemsSource="{Binding Students}" DisplayMemberPath="Name"
-                     SelectionMode="Extended">
+                     SelectionMode="Extended" BorderBrush="White">
+                <CheckBox></CheckBox>
+                
+                
                 <!--方式一：-->
                 <!--<ListBoxItem>
                     <TextBlock>张三</TextBlock>
