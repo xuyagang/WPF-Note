@@ -37,9 +37,9 @@
 
 
         <!--测试2-->
-        <!--<ListBox x:Name="listTest">
+        <ListBox x:Name="listTest">
             <ListBox.ItemTemplate>
-                --><!--数据模板--><!--
+                <!--数据模板-->
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
                         <Border Width="10" Height="10" Background="{Binding Code}"/>
@@ -47,13 +47,13 @@
                     </StackPanel>
                 </DataTemplate>
             </ListBox.ItemTemplate>
-        </ListBox>-->
+        </ListBox>
 
         
 
 
         <!--测试3-->
-        <ListBox>
+        <!--<ListBox>
             <DataGrid x:Name="grid" AutoGenerateColumns="False" CanUserAddRows="False">
                 <DataGrid.Columns>
                     <DataGridTextColumn Binding="{Binding Code}" Header="Code"/>
@@ -61,14 +61,14 @@
 
                     <DataGridTemplateColumn Header="操作">
                         <DataGridTemplateColumn.CellTemplate>
-                            <!--数据模板-->
+                            --><!--数据模板--><!--
                             <DataTemplate>
-                                <!--<StackPanel Orientation="Horizontal">
+                                --><!--<StackPanel Orientation="Horizontal">
                                     <Border Width="10" Height="10" Background="{Binding Code}"/>
                                     <TextBlock Margin="10" Text="{Binding Name}"/>
                                 </StackPanel>-->
 
-                                <!--里面只允许一个元素存在，所以需要一个容器来包裹-->
+                                <!--里面只允许一个元素存在，所以需要一个容器来包裹--><!--
                                 <StackPanel Orientation="Horizontal">
                                     <Button Content="删除"/>
                                     <Button Content="复制"/>
@@ -79,7 +79,7 @@
                     </DataGridTemplateColumn>
                 </DataGrid.Columns>
             </DataGrid>
-        </ListBox>
+        </ListBox>-->
 
         
         

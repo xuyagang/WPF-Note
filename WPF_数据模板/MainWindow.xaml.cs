@@ -32,12 +32,12 @@ namespace WPF_数据模板
             listNum.Add(new Color() { Code = "#FFF0F5", Name = "淡紫色" });
 
             // 测试2
-            //listTest.ItemsSource = listNum;
+            listTest.ItemsSource = listNum;
 
 
 
             // 测试3
-            grid.ItemsSource = listNum;
+            //grid.ItemsSource = listNum;
 
 
 
