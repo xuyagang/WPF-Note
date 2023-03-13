@@ -7,23 +7,12 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <!--<ListBox x:Name="listTest">
-            <ListBox.ItemTemplate>
-                --><!--数据模板--><!--
-                <DataTemplate>
-                    <StackPanel Orientation="Horizontal">
-                        <Border Width="10" Height="10" Background="{Binding Code}"/>
-                        <TextBlock Margin="10,0" Text="{Binding Name}"/>
-                    </StackPanel>
-                </DataTemplate>
-            </ListBox.ItemTemplate>
-        </ListBox>-->
 
-        
-        
-        <!--<ListBox x:Name="listTest">-->
-            <!--<ListBoxItem>
-                <StackPanel Orientation="Horizontal">  --><!--容器--><!--
+        <!--测试1-->
+        <!--<ListBox x:Name="listTest1">
+            <ListBoxItem>
+                <StackPanel Orientation="Horizontal">
+                    --><!--容器--><!--
                     <Border Width="10" Height="10" Background="Red"/>
                     <TextBlock Margin="10.0" Text="Red"/>
                 </StackPanel>
@@ -41,20 +30,34 @@
                     <Border Width="10" Height="10" Background="Green"/>
                     <TextBlock Margin="10.0" Text="Green"/>
                 </StackPanel>
-            </ListBoxItem>-->
-        <!--</ListBox>-->
+            </ListBoxItem>
+        </ListBox>-->
+
+
+
+
+        <!--测试2-->
+        <!--<ListBox x:Name="listTest">
+            <ListBox.ItemTemplate>
+                --><!--数据模板--><!--
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <Border Width="10" Height="10" Background="{Binding Code}"/>
+                        <TextBlock Margin="10,0" Text="{Binding Name}"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>-->
 
         
-        
-        
 
+
+        <!--测试3-->
         <ListBox>
             <DataGrid x:Name="grid" AutoGenerateColumns="False" CanUserAddRows="False">
                 <DataGrid.Columns>
                     <DataGridTextColumn Binding="{Binding Code}" Header="Code"/>
                     <DataGridTextColumn Binding="{Binding Name}" Header="Name"/>
-
-                    <DataGridTextColumn Header="操作"/>
 
                     <DataGridTemplateColumn Header="操作">
                         <DataGridTemplateColumn.CellTemplate>
