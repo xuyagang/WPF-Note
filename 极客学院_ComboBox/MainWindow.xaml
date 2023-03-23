@@ -9,7 +9,7 @@
     <Grid>
         <!--<loc:ComboBoxUserControl></loc:ComboBoxUserControl>-->
         
-        <loc:ListBoxUserControl></loc:ListBoxUserControl>
+        <!--<loc:ListBoxUserControl></loc:ListBoxUserControl>-->
 
         <!--<loc:ListViewUserControl></loc:ListViewUserControl>-->
 
