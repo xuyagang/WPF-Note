@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "极客学院_CollectionCont
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A_CheckBoxAndTreeView", "A_CheckBoxAndTreeView\A_CheckBoxAndTreeView.csproj", "{17571594-ED5A-4285-B610-B5F2690F7033}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A_PasswordTest", "A_PasswordTest\A_PasswordTest.csproj", "{CDEAD29C-8EA7-478B-BA5B-FBBBC51649FA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,10 +101,10 @@ Global
 		{17571594-ED5A-4285-B610-B5F2690F7033}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17571594-ED5A-4285-B610-B5F2690F7033}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{17571594-ED5A-4285-B610-B5F2690F7033}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FA18A0E6-94C6-4094-876B-27F3CCB5D131}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FA18A0E6-94C6-4094-876B-27F3CCB5D131}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FA18A0E6-94C6-4094-876B-27F3CCB5D131}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FA18A0E6-94C6-4094-876B-27F3CCB5D131}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDEAD29C-8EA7-478B-BA5B-FBBBC51649FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDEAD29C-8EA7-478B-BA5B-FBBBC51649FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDEAD29C-8EA7-478B-BA5B-FBBBC51649FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDEAD29C-8EA7-478B-BA5B-FBBBC51649FA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
