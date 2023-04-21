@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{17571594-ED5A-4285-B610-B5F2690F7033}</ProjectGuid>
+    <ProjectGuid>{E0FB684D-207B-4169-9E7E-2AA5A230A0F7}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>A_CheckBoxAndTreeView</RootNamespace>
-    <AssemblyName>A_CheckBoxAndTreeView</AssemblyName>
+    <RootNamespace>TreeViewTest</RootNamespace>
+    <AssemblyName>TreeViewTest</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>

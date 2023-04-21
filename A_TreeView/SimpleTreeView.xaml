@@ -1,0 +1,62 @@
+﻿<UserControl x:Class="A_TreeView.SimpleTreeView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:A_TreeView"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Background="White">
+        <TreeView Name="myTreeViewEvent" >
+            <TreeViewItem Header="Employee1" IsSelected="True">
+                <TreeViewItem Header="Jesper Aaberg"/>
+                <TreeViewItem Header="Employee Number">
+                    <TreeViewItem Header="12345"/>
+                </TreeViewItem>
+                <TreeViewItem Header="Work Days">
+                    <TreeViewItem Header="Monday"/>
+                    <TreeViewItem Header="Tuesday"/>
+                    <TreeViewItem Header="Thursday"/>
+                </TreeViewItem>
+            </TreeViewItem>
+            <TreeViewItem Header="Employee2" IsExpanded="True">
+                <TreeViewItem Header="Dominik Paiha"/>
+                <TreeViewItem Header="Employee Number">
+                    <TreeViewItem Header="98765"/>
+                </TreeViewItem>
+                <TreeViewItem Header="Work Days">
+                    <TreeViewItem Header="Tuesday"/>
+                    <TreeViewItem Header="Wednesday"/>
+                    <TreeViewItem Header="Friday"/>
+                </TreeViewItem>
+            </TreeViewItem>
+
+            
+            <TreeViewItem>
+                <TreeViewItem.Header>
+                    <DockPanel>
+                        <CheckBox Content="checkbox"/>
+                        <TextBlock>TreeViewItem Text</TextBlock>
+                    </DockPanel>
+                </TreeViewItem.Header>
+            </TreeViewItem>
+
+
+            <TreeViewItem Header ="Employee1">
+                <TreeViewItem.Items>
+                    <Button>Jesper</Button>
+                    <Button>Aaberg</Button>
+                    <Button>12345</Button>
+                </TreeViewItem.Items>
+            </TreeViewItem>
+            <TreeViewItem Header="Employee2">
+                <TreeViewItem.Items>
+                    <Button>Dominik</Button>
+                    <Button>Paiha</Button>
+                    <Button>98765</Button>
+                </TreeViewItem.Items>
+            </TreeViewItem>
+        </TreeView>
+        
+    </Grid>
+</UserControl>

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace A_CheckBoxAndTreeView.Properties
+namespace A_TreeView.Properties
 {
 
 
