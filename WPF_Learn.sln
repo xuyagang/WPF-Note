@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32407.343
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_Style", "WPF_Style\WPF_Style.csproj", "{08830ACF-18E9-48C2-A5C8-EA7AC6E5A4B6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_样式基础", "WPF_Style\WPF_样式基础.csproj", "{08830ACF-18E9-48C2-A5C8-EA7AC6E5A4B6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_控件模板", "WPF_控件模板\WPF_控件模板.csproj", "{7A55D2E3-1C7C-4CF6-99D3-3B2C2FF76F41}"
 EndProject
@@ -23,7 +23,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_INotifyPropertyChanged"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "极客学院_Binding_集合对象", "极客学院_Binding_集合对象\极客学院_Binding_集合对象.csproj", "{B7894A2B-17A3-4242-998A-57F6FB2B1A31}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_Learn", "WPF_Learn\WPF_Learn.csproj", "{EC9D0A4B-AB37-4C92-86C2-00D71B60A5C2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_布局基础", "WPF_Learn\WPF_布局基础.csproj", "{EC9D0A4B-AB37-4C92-86C2-00D71B60A5C2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A_WPF拖放功能_图片文字", "A_WPF拖放功能_图片文字\A_WPF拖放功能_图片文字.csproj", "{66CDD30E-3FC5-42CE-8312-9042F94CD586}"
 EndProject
