@@ -13,10 +13,10 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WPF_数据模板
+namespace WPF_数据模板_ListBox_DataTemplate
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// MainWindow.xaml 的交互逻辑
     /// </summary>
     public partial class MainWindow : Window
     {
@@ -24,23 +24,14 @@ namespace WPF_数据模板
         {
             InitializeComponent();
 
-            ////批量赋值测试，此时所有元素是一样的，因为属性值都一样
-            //List<int> listNum = new List<int>();
-            //for (int i = 0; i < 10; i++)
-            //{
-            //    listNum.Add(i);
-            //}
-            //listTest.ItemsSource = listNum;
-
-
-            // 创建颜色数据对象，绑定数据后，每个项都有自己各自的颜色
+            // 创建颜色数据对象
             List<Color> listNum = new List<Color>();
             listNum.Add(new Color() { Code = "#FFB6C1", Name = "浅粉红" });
             listNum.Add(new Color() { Code = "#FFC0CB", Name = "粉红" });
             listNum.Add(new Color() { Code = "#DC143C", Name = "深红" });
             listNum.Add(new Color() { Code = "#FFF0F5", Name = "淡紫色" });
 
-            grid.ItemsSource = listNum;
+            listTest.ItemsSource = listNum;
         }
     }
 

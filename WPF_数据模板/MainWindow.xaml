@@ -7,81 +7,36 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
-        <!--测试1-->
-        <!--<ListBox x:Name="listTest1">
-            <ListBoxItem>
-                <StackPanel Orientation="Horizontal">
-                    --><!--容器--><!--
-                    <Border Width="10" Height="10" Background="Red"/>
-                    <TextBlock Margin="10.0" Text="Red"/>
-                </StackPanel>
-            </ListBoxItem>
-            <ListBoxItem>
-                <StackPanel Orientation="Horizontal">
-                    --><!--容器--><!--
-                    <Border Width="10" Height="10" Background="Blue"/>
-                    <TextBlock Margin="10.0" Text="Blue"/>
-                </StackPanel>
-            </ListBoxItem>
-            <ListBoxItem>
-                <StackPanel Orientation="Horizontal">
-                    --><!--容器--><!--
-                    <Border Width="10" Height="10" Background="Green"/>
-                    <TextBlock Margin="10.0" Text="Green"/>
-                </StackPanel>
-            </ListBoxItem>
-        </ListBox>-->
-
-
-
-
-        <!--测试2-->
-        <ListBox x:Name="listTest">
-            <ListBox.ItemTemplate>
-                <!--数据模板-->
-                <DataTemplate>
-                    <StackPanel Orientation="Horizontal">
-                        <Border Width="10" Height="10" Background="{Binding Code}"/>
-                        <TextBlock Margin="10,0" Text="{Binding Name}"/>
-                    </StackPanel>
-                </DataTemplate>
-            </ListBox.ItemTemplate>
-        </ListBox>
-
-        
-
-
         <!--测试3-->
-        <!--<ListBox>
+        <ListBox>
             <DataGrid x:Name="grid" AutoGenerateColumns="False" CanUserAddRows="False">
                 <DataGrid.Columns>
                     <DataGridTextColumn Binding="{Binding Code}" Header="Code"/>
                     <DataGridTextColumn Binding="{Binding Name}" Header="Name"/>
-
+                    <DataGridTextColumn Header="操作"/>
+                    <!--模板列-->
                     <DataGridTemplateColumn Header="操作">
                         <DataGridTemplateColumn.CellTemplate>
-                            --><!--数据模板--><!--
                             <DataTemplate>
-                                --><!--<StackPanel Orientation="Horizontal">
+                                
+                                <!--数据绑定-->
+                                <!--<StackPanel Orientation="Horizontal">
                                     <Border Width="10" Height="10" Background="{Binding Code}"/>
                                     <TextBlock Margin="10" Text="{Binding Name}"/>
                                 </StackPanel>-->
 
-                                <!--里面只允许一个元素存在，所以需要一个容器来包裹--><!--
+                                <!--其他内容测试，需要有一个容器包装，因为只允许一个元素-->
                                 <StackPanel Orientation="Horizontal">
                                     <Button Content="删除"/>
                                     <Button Content="复制"/>
                                     <Button Content="保存"/>
                                 </StackPanel>
+                                
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
                 </DataGrid.Columns>
             </DataGrid>
-        </ListBox>-->
-
-        
-        
+        </ListBox>
     </Grid>
 </Window>

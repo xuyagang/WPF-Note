@@ -37,6 +37,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeViewTest", "TreeViewTes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A_TreeView", "A_TreeView\A_TreeView.csproj", "{AB36EA3F-ECFE-4FA1-A9A5-E72B1ECE6DAC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_数据模板_ListBox_base", "WPF_数据模板_ListBox\WPF_数据模板_ListBox_base.csproj", "{363E4418-F589-40E6-92F4-1FE2C4BCDC5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_数据模板_ListBox_DataTemplate", "WPF_数据模板_ListBox_DataTemplate\WPF_数据模板_ListBox_DataTemplate.csproj", "{2401731B-3348-444E-9D37-DAF1CDE2FF41}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +115,14 @@ Global
 		{AB36EA3F-ECFE-4FA1-A9A5-E72B1ECE6DAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB36EA3F-ECFE-4FA1-A9A5-E72B1ECE6DAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB36EA3F-ECFE-4FA1-A9A5-E72B1ECE6DAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{363E4418-F589-40E6-92F4-1FE2C4BCDC5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{363E4418-F589-40E6-92F4-1FE2C4BCDC5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{363E4418-F589-40E6-92F4-1FE2C4BCDC5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{363E4418-F589-40E6-92F4-1FE2C4BCDC5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2401731B-3348-444E-9D37-DAF1CDE2FF41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2401731B-3348-444E-9D37-DAF1CDE2FF41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2401731B-3348-444E-9D37-DAF1CDE2FF41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2401731B-3348-444E-9D37-DAF1CDE2FF41}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
