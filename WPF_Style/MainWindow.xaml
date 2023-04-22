@@ -25,9 +25,9 @@
         <!--继承父级样式-->
         <!--TargetType必须要对应-->
         <Style x:Key="MyButtonStyle" TargetType="Button" BasedOn="{StaticResource BaseButtonStyle}">
-            <!--<Setter Property="FontSize" Value="18"/>
-            <Setter Property="Foreground" Value="White"/>
-            <Setter Property="Background" Value="Red"/>-->
+            <Setter Property="FontSize" Value="18"/>
+            <!--<Setter Property="Foreground" Value="White"/>-->
+            <Setter Property="Background" Value="#FF0079FF"/>
             
             <Setter Property="Content" Value="Button1"/>
         </Style>

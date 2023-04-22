@@ -39,33 +39,69 @@
                     <ControlTemplate TargetType="{x:Type Button}">
                         <Grid>
                             <Grid.RowDefinitions>
-                                <RowDefinition Height="50"/>
-                                <RowDefinition/>
+                                <RowDefinition Height="auto"></RowDefinition>
+                                <RowDefinition></RowDefinition>
                             </Grid.RowDefinitions>
-                            <Border Background="Red"/>
-                            <Button Content="000"/>
-
-                            <Border Grid.Row="1" x:Name="border" Background="Blue" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" SnapsToDevicePixels="true">
-                                <ContentPresenter x:Name="contentPresenter" Focusable="False" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                            <Border Background="Red">
+                                <Button Content="Test" Width="50"></Button>
+                            </Border>
+                            <Border Grid.Row="1"
+                                x:Name="border" 
+                                Background="{TemplateBinding Background}" 
+                                BorderBrush="{TemplateBinding BorderBrush}" 
+                                BorderThickness="{TemplateBinding BorderThickness}" 
+                                SnapsToDevicePixels="true">
+                                <ContentPresenter 
+                                    x:Name="contentPresenter" 
+                                    Focusable="False" 
+                                    HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
+                                    Margin="{TemplateBinding Padding}" 
+                                    RecognizesAccessKey="True" 
+                                    SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" 
+                                    VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
                             </Border>
                         </Grid>
-                        
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsDefaulted" Value="true">
+                                <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
+                            </Trigger>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter Property="Background" TargetName="border" Value="{StaticResource Button.MouseOver.Background}"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.MouseOver.Border}"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="true">
+                                <Setter Property="Background" TargetName="border" Value="{StaticResource Button.Pressed.Background}"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.Pressed.Border}"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter Property="Background" TargetName="border" Value="{StaticResource Button.Disabled.Background}"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.Disabled.Border}"/>
+                                <Setter Property="TextElement.Foreground" TargetName="contentPresenter" Value="{StaticResource Button.Disabled.Foreground}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>
         </Style>
     </Window.Resources>
+
     <Grid>
         <StackPanel>
-            <Button Style="{DynamicResource ButtonStyle1}" Width="200" Height="100">
-                <StackPanel Orientation="Horizontal">
-                    <Button Content="1" />
-                    <Button Content="2" />
-                    <Button Content="3" />
-                    <Button Content="4" />
-                </StackPanel>
+            <Button 
+                Style="{DynamicResource ButtonStyle1}"
+                Padding="15"
+                Background="Purple">
+                <Button.Content>
+                    <StackPanel Orientation="Horizontal">
+                        <Button Content="Bt1"></Button>
+                        <Button Content="Bt1"></Button>
+                        <Button Content="Bt1"></Button>
+                        <CheckBox VerticalContentAlignment="Center">ContentPresenter控制区域</CheckBox>
+                    </StackPanel>
+                </Button.Content>
             </Button>
-
+            <CheckBox Content="Hello2"></CheckBox>
+            <Button Content="Hello3"></Button>
         </StackPanel>
     </Grid>
 </Window>
