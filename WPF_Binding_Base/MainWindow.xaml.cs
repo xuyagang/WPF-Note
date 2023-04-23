@@ -13,20 +13,31 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WPF_Binding
+namespace WPF_Binding_Base
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// MainWindow.xaml 的交互逻辑
     /// </summary>
     public partial class MainWindow : Window
     {
         public MainWindow()
         {
             InitializeComponent();
-            this.DataContext = new Test()
+        }
+
+        private void Slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            tb1.Text = slider.Value.ToString();
+            tb2.Text = slider.Value.ToString();
+            tb3.Text = slider.Value.ToString();
+        }
+
+        private void tb1_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if(double.TryParse(tb1.Text, out double value))
             {
-                Name = "张三"
-            };
+                slider.Value = value;
+            }
         }
     }
 }

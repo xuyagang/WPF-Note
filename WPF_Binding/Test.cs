@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WPF_Binding
 {
-    internal class Test
+    class Test
     {
         public string Name { get; set; }
     }

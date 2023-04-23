@@ -1,0 +1,19 @@
+﻿<Window x:Class="WPF_Binding_控件和控件.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Binding_控件和控件"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <!--控件与控件之间的绑定-->
+        <StackPanel>
+            <Slider x:Name="slider" Margin="5" />
+            <!--ElementName-是要绑定数据的对象, Path-是指定要绑定的对象属性, 默认双向-->
+            <TextBox Margin="5" Height="30" Text="{Binding ElementName=slider, Path=Value}"/>
+            <TextBox Margin="5" Height="30" Text="{Binding ElementName=slider,Path=Value, Mode=OneTime}"/>
+            <TextBox Margin="5" Height="30" Text="{Binding ElementName=slider,Path=Value}"/>
+        </StackPanel>
+    </Grid>
+</Window>

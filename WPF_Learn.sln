@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_样式基础", "WPF_Sty
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_控件模板", "WPF_控件模板\WPF_控件模板.csproj", "{7A55D2E3-1C7C-4CF6-99D3-3B2C2FF76F41}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_数据模板", "WPF_数据模板\WPF_数据模板.csproj", "{34E20F56-A8DE-42C0-9AAF-8B4B6CF1648E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_数据模板_DataGrid", "WPF_数据模板\WPF_数据模板_DataGrid.csproj", "{34E20F56-A8DE-42C0-9AAF-8B4B6CF1648E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_Binding", "WPF_Binding\WPF_Binding.csproj", "{13A6B9D6-D16E-4459-9452-5463E1991248}"
 EndProject
@@ -40,6 +40,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_数据模板_ListBox_base", "WPF_数据模板_ListBox\WPF_数据模板_ListBox_base.csproj", "{363E4418-F589-40E6-92F4-1FE2C4BCDC5A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_数据模板_ListBox_DataTemplate", "WPF_数据模板_ListBox_DataTemplate\WPF_数据模板_ListBox_DataTemplate.csproj", "{2401731B-3348-444E-9D37-DAF1CDE2FF41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_Binding_事件驱动", "WPF_Binding_Base\WPF_Binding_事件驱动.csproj", "{7A5C1320-BF85-42A7-B210-A8EF01675CC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_Binding_控件和控件", "WPF_Binding_控件和控件\WPF_Binding_控件和控件.csproj", "{583B9DC9-004B-4691-A16E-D365423D216B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -123,6 +127,14 @@ Global
 		{2401731B-3348-444E-9D37-DAF1CDE2FF41}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2401731B-3348-444E-9D37-DAF1CDE2FF41}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2401731B-3348-444E-9D37-DAF1CDE2FF41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A5C1320-BF85-42A7-B210-A8EF01675CC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A5C1320-BF85-42A7-B210-A8EF01675CC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A5C1320-BF85-42A7-B210-A8EF01675CC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A5C1320-BF85-42A7-B210-A8EF01675CC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{583B9DC9-004B-4691-A16E-D365423D216B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{583B9DC9-004B-4691-A16E-D365423D216B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{583B9DC9-004B-4691-A16E-D365423D216B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{583B9DC9-004B-4691-A16E-D365423D216B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
