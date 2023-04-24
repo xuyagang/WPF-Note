@@ -11,13 +11,14 @@ namespace WPF_Command
     /// <summary>
     /// 表现具体行为的类
     /// </summary>
-    public class MainViewModel : ViewModelBase
+    public class MainViewModel
     {
         public MyCommand ShowCommand { get; set; }
-
+        /// <summary>
+        /// 创建命令和行为的联系，将行为函数通过委托传递给命令
+        /// </summary>
         public MainViewModel()
         {
-            Name = "Hello";
             ShowCommand = new MyCommand(Show);
         }
 
@@ -26,47 +27,7 @@ namespace WPF_Command
         /// </summary>
         public void Show()
         {
-            Name = "点击了按钮!";
-            Title = "我是标题";
-            MessageBox.Show(Name);
+            MessageBox.Show("点击了按钮");
         }
-
-
-
-
-        private string name;
-        public string Name
-        {
-            get { return name; }
-            set
-            {
-                name = value;
-                OnPropertyChanged();
-                //PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Name"));
-            }
-        }
-
-        private string title;
-        public string Title
-        {
-            get { return title; }
-            set
-            {
-                title = value;
-                OnPropertyChanged();
-                //PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Name"));
-            }
-        }
-
-
-
-
-
-       
-
-
-
-
-        //public event PropertyChangedEventHandler PropertyChanged;
     }
 }

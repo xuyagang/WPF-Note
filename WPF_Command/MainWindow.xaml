@@ -10,6 +10,7 @@
         <StackPanel>
             <TextBox Text="{Binding Name}"/>
             <TextBox Text="{Binding Title}"/>
+            <!--之前的click事件删除，别命令替换-->
             <Button Content="show" Command="{Binding ShowCommand}" Height="20"/>
         </StackPanel>
     </Grid>

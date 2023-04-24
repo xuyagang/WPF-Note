@@ -24,8 +24,6 @@ namespace WPF_Command
         {
             InitializeComponent();
             this.DataContext = new MainViewModel();
-            //MainViewModel test = new MainViewModel();
         }
-
     }
 }
