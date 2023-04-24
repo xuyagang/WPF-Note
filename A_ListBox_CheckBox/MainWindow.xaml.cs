@@ -13,11 +13,10 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace A_ListBox_RadioButton
+namespace A_ListBox_CheckBox
 {
     /// <summary>
     /// MainWindow.xaml 的交互逻辑
-    /// 参考wpf编程宝典 - page558
     /// </summary>
     public partial class MainWindow : Window
     {
@@ -33,6 +32,7 @@ namespace A_ListBox_RadioButton
             listbox.ItemsSource = datas;
         }
     }
+
 
     public class Data
     {
