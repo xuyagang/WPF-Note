@@ -8,7 +8,9 @@ using System.Windows;
 
 namespace WPF_Command
 {
-    // 外部程序
+    /// <summary>
+    /// 表现具体行为的类
+    /// </summary>
     public class MainViewModel : ViewModelBase
     {
         public MyCommand ShowCommand { get; set; }
@@ -19,6 +21,9 @@ namespace WPF_Command
             ShowCommand = new MyCommand(Show);
         }
 
+        /// <summary>
+        /// 方法和界面没有关系，任何界面都可调用
+        /// </summary>
         public void Show()
         {
             Name = "点击了按钮!";
