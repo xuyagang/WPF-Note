@@ -33,8 +33,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "极客学院_CollectionCont
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A_PasswordTest", "A_PasswordTest\A_PasswordTest.csproj", "{CDEAD29C-8EA7-478B-BA5B-FBBBC51649FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeViewTest", "TreeViewTest\TreeViewTest.csproj", "{E0FB684D-207B-4169-9E7E-2AA5A230A0F7}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A_TreeView", "A_TreeView\A_TreeView.csproj", "{AB36EA3F-ECFE-4FA1-A9A5-E72B1ECE6DAC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_数据模板_ListBox_base", "WPF_数据模板_ListBox\WPF_数据模板_ListBox_base.csproj", "{363E4418-F589-40E6-92F4-1FE2C4BCDC5A}"
@@ -48,6 +46,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A_ListBox_RadioButton", "A_ListBox_RadioButton\A_ListBox_RadioButton.csproj", "{E164010D-49F3-4171-8450-CDB6E39E047B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A_ListBox_CheckBox", "A_ListBox_CheckBox\A_ListBox_CheckBox.csproj", "{FB9D1989-C661-4D96-B690-6BBD0A6D14FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_INotifyPropertyChanged_Simple", "WPF_INotifyPropertyChanged_Simple\WPF_INotifyPropertyChanged_Simple.csproj", "{DA4BE81E-55CD-4833-B4AC-00B9AB47C2FC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -115,10 +115,6 @@ Global
 		{CDEAD29C-8EA7-478B-BA5B-FBBBC51649FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CDEAD29C-8EA7-478B-BA5B-FBBBC51649FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CDEAD29C-8EA7-478B-BA5B-FBBBC51649FA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E0FB684D-207B-4169-9E7E-2AA5A230A0F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E0FB684D-207B-4169-9E7E-2AA5A230A0F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E0FB684D-207B-4169-9E7E-2AA5A230A0F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E0FB684D-207B-4169-9E7E-2AA5A230A0F7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AB36EA3F-ECFE-4FA1-A9A5-E72B1ECE6DAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AB36EA3F-ECFE-4FA1-A9A5-E72B1ECE6DAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB36EA3F-ECFE-4FA1-A9A5-E72B1ECE6DAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -147,6 +143,10 @@ Global
 		{FB9D1989-C661-4D96-B690-6BBD0A6D14FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB9D1989-C661-4D96-B690-6BBD0A6D14FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB9D1989-C661-4D96-B690-6BBD0A6D14FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA4BE81E-55CD-4833-B4AC-00B9AB47C2FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA4BE81E-55CD-4833-B4AC-00B9AB47C2FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA4BE81E-55CD-4833-B4AC-00B9AB47C2FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA4BE81E-55CD-4833-B4AC-00B9AB47C2FC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
