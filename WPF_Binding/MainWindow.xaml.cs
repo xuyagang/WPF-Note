@@ -24,7 +24,7 @@ namespace WPF_Binding
         public MainWindow()
         {
             InitializeComponent();
-            this.DataContext = new Test()
+            this.DataContext = new DataClass()
             {
                 Name = "张三"
             };

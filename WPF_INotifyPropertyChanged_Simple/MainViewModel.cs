@@ -38,7 +38,7 @@ namespace WPF_INotifyPropertyChanged_Simple
             }
         }
 
-        // 如果还有多个属性通知，可以把通用的部分放入一个方法来通知界面更新
+        // 这是另一个属性，如果还有多个属性通知，可以把通用的部分放入一个方法来通知界面更新
         private string title;
         public string Title
         {

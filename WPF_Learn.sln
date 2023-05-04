@@ -17,7 +17,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "极客学院_MenuControls",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "极客学院_Binding", "极客学院_Binding\极客学院_Binding.csproj", "{26CCA271-E458-43B7-AEAD-E6FB11EACA2F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_INotifyPropertyChanged", "WPF_INotifyPropertyChanged\WPF_INotifyPropertyChanged.csproj", "{866C3125-63C9-4E57-81E7-808EDA7969A8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_INotifyPropertyChanged_通知类", "WPF_INotifyPropertyChanged\WPF_INotifyPropertyChanged_通知类.csproj", "{866C3125-63C9-4E57-81E7-808EDA7969A8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "极客学院_Binding_集合对象", "极客学院_Binding_集合对象\极客学院_Binding_集合对象.csproj", "{B7894A2B-17A3-4242-998A-57F6FB2B1A31}"
 EndProject
@@ -43,11 +43,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A_ListBox_RadioButton", "A_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A_ListBox_CheckBox", "A_ListBox_CheckBox\A_ListBox_CheckBox.csproj", "{FB9D1989-C661-4D96-B690-6BBD0A6D14FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_INotifyPropertyChanged_Simple", "WPF_INotifyPropertyChanged_Simple\WPF_INotifyPropertyChanged_Simple.csproj", "{DA4BE81E-55CD-4833-B4AC-00B9AB47C2FC}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_样式基础", "WPF_样式基础\WPF_样式基础.csproj", "{08830ACF-18E9-48C2-A5C8-EA7AC6E5A4B6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_INotifyPropertyChanged_简单方式", "WPF_INotifyPropertyChanged_Simple\WPF_INotifyPropertyChanged_简单方式.csproj", "{DA4BE81E-55CD-4833-B4AC-00B9AB47C2FC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_布局基础", "WPF_布局基础\WPF_布局基础.csproj", "{EC9D0A4B-AB37-4C92-86C2-00D71B60A5C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_样式基础", "WPF_样式基础\WPF_样式基础.csproj", "{08830ACF-18E9-48C2-A5C8-EA7AC6E5A4B6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -139,14 +139,6 @@ Global
 		{DA4BE81E-55CD-4833-B4AC-00B9AB47C2FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA4BE81E-55CD-4833-B4AC-00B9AB47C2FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA4BE81E-55CD-4833-B4AC-00B9AB47C2FC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{08830ACF-18E9-48C2-A5C8-EA7AC6E5A4B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{08830ACF-18E9-48C2-A5C8-EA7AC6E5A4B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{08830ACF-18E9-48C2-A5C8-EA7AC6E5A4B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{08830ACF-18E9-48C2-A5C8-EA7AC6E5A4B6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EC9D0A4B-AB37-4C92-86C2-00D71B60A5C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EC9D0A4B-AB37-4C92-86C2-00D71B60A5C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EC9D0A4B-AB37-4C92-86C2-00D71B60A5C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EC9D0A4B-AB37-4C92-86C2-00D71B60A5C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

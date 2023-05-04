@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace WPF_Binding
 {
-    class Test
+    /// <summary>
+    /// 数据类
+    /// </summary>
+    class DataClass
     {
         public string Name { get; set; }
     }
