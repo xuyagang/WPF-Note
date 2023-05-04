@@ -12,7 +12,11 @@
             <TextBox 
                 Margin="5" 
                 Height="30" 
-                Text="{Binding Name}"/>
+                Text="{Binding Name, Mode=TwoWay}"/>
+            <TextBox 
+                Margin="5" 
+                Height="30" 
+                Text="{Binding Name, Mode=OneWay}"/>
         </StackPanel>
 
     </Grid>
