@@ -51,6 +51,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_样式基础", "WPF_样
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A_TreeviewWithCheckBox", "A_TreeviewWithCheckBox\A_TreeviewWithCheckBox.csproj", "{9DA49FC7-15D0-4B84-A771-205E6156278D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A_TabTest", "A_TabTest\A_TabTest.csproj", "{F7996ACD-4DBF-4E0D-9992-11B897C4CDED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -153,6 +155,10 @@ Global
 		{9DA49FC7-15D0-4B84-A771-205E6156278D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9DA49FC7-15D0-4B84-A771-205E6156278D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9DA49FC7-15D0-4B84-A771-205E6156278D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7996ACD-4DBF-4E0D-9992-11B897C4CDED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7996ACD-4DBF-4E0D-9992-11B897C4CDED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7996ACD-4DBF-4E0D-9992-11B897C4CDED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7996ACD-4DBF-4E0D-9992-11B897C4CDED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
