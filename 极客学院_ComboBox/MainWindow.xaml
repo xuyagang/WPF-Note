@@ -13,7 +13,7 @@
 
         <!--<loc:ListViewUserControl></loc:ListViewUserControl>-->
 
-        <!--<loc:TabControlUserControl1></loc:TabControlUserControl1>-->
+        <loc:TabControlUserControl1></loc:TabControlUserControl1>
 
         <!--<loc:DataGirdUserControl1></loc:DataGirdUserControl1>-->
 

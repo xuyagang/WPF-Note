@@ -1,0 +1,46 @@
+﻿<Window x:Class="A_TabTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:A_TabTest"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <WrapPanel>
+            <TabControl Width="250" Height="200" Background="#555a64">
+                <TabItem x:Name="TabItem1">
+                    <TabItem.Header>
+                        <StackPanel Orientation="Horizontal">
+                            <Ellipse Width="10" Height="10" Fill="DarkGray"/>
+                            <TextBlock>Tab 1</TextBlock>
+                        </StackPanel>
+                    </TabItem.Header>
+                    <StackPanel>
+                        <TextBlock >Enter some text</TextBlock>
+                        <TextBox Name="textBox1" Width="150" Height="30"/>
+                    </StackPanel>
+                </TabItem>
+                <TabItem  x:Name="TabItem2" Header="Tab 2">
+                    <TextBlock Text="{Binding ElementName=textBox1, Path=Text}"/>
+                </TabItem>
+            </TabControl>
+
+            <TabControl TabStripPlacement="Left" Width="250" Height="200" Margin="20">
+                <TabItem Header="General">
+                    <Label Content="Content goes here1..." />
+                </TabItem>
+                <TabItem Header="Security" >
+                    <StackPanel Background="#f1ef9f">
+                        <Label Content="Content goes here2..." />
+                        <Label Content="Content goes here2..." />
+                        <Button Content="Security" Width="150" Height="35"/>
+                    </StackPanel>
+                </TabItem>
+                <TabItem Header="Details" >
+                    <Border Background="#f0c01f" ></Border>
+                </TabItem>
+            </TabControl>
+        </WrapPanel>
+    </Grid>
+</Window>
