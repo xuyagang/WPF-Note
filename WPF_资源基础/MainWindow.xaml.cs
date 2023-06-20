@@ -27,8 +27,12 @@ namespace WPF_资源基础
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            // 找到资源,并设置新值
+            // 找到资源,并更新资源值
             this.Resources["SolidColor"] = new SolidColorBrush(Colors.Purple);
+
+            // 查找资源的方式
+            var solidColor = App.Current.FindResource("SolidColor");
+            var style = App.Current.FindResource("DefaultButtonStyle");
         }
     }
 }
