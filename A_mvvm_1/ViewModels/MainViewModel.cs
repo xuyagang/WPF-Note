@@ -19,11 +19,9 @@ namespace A_mvvm_1.ViewModels
             SearchCommand = new RelayCommand((arg) =>
             {
                 MessageBox.Show("您点击了按钮");
-
-                Title = "AAA";
+                // 此时会激活属性更新
+                Title = "AAA";   
             });
-
-
         }
 
         private string _title = "默认值";
