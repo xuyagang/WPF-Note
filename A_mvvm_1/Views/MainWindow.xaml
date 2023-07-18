@@ -20,9 +20,10 @@
         <Grid Grid.Column="1">
             <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
                 <TextBlock Height="50" Text="{Binding Title}" HorizontalAlignment="Center"></TextBlock>
-                <Button Height="50" Width="300" Command="{Binding SearchCommand}"></Button>
+                <Button Height="50" Width="300" Command="{Binding SearchCommand}">搜索</Button>
+                <Button Height="50" Width="300" Command="{Binding CloseCommand}"
+                        CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=Window}}">关闭</Button>
             </StackPanel>
-            
         </Grid>
     </Grid>
 </Window>

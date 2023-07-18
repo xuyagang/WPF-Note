@@ -14,7 +14,7 @@ namespace A_mvvm_1.ViewModels
     {
         public MainViewModel()
         {
-            // 把命令通过属性绑定到按钮
+            // 给命令属性赋值，把命令通过属性绑定到按钮
             // 把lambda表达式作为委托类型传递给RelayCommand
             SearchCommand = new RelayCommand((arg) =>
             {
@@ -38,11 +38,23 @@ namespace A_mvvm_1.ViewModels
             }
         }
 
+        /// <summary>
+        /// 命令属性
+        /// 绑定到按钮
+        /// </summary>
         public ICommand SearchCommand 
         { 
             get; 
             set; 
         }
+
+        /// <summary>
+        /// arg用于获取当前窗体
+        /// </summary>
+        public RelayCommand CloseCommand => new RelayCommand((arg) =>
+        {
+            (arg as Window)?.Close();
+        });
 
     }
 }
