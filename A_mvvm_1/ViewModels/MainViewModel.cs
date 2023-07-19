@@ -51,10 +51,9 @@ namespace A_mvvm_1.ViewModels
         /// <summary>
         /// arg用于获取当前窗体
         /// </summary>
-        public RelayCommand CloseCommand => new RelayCommand((arg) =>
-        {
-            (arg as Window)?.Close();
-        });
+        public RelayCommand CloseCommand => new RelayCommand((arg) => (arg as Window)?.Close());
+
+        // 23min处
 
     }
 }
