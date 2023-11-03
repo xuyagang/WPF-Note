@@ -8,8 +8,10 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <!--<local:SimpleTreeView></local:SimpleTreeView>-->
-        <local:HierachicalDataTemplateTest/>
+        <!--<local:HierachicalDataTemplateTest/>-->
 
+        <local:CheckboxTreeView/>
 
+        
     </Grid>
 </Window>

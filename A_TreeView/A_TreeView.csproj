@@ -55,8 +55,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="DataSetTest.xaml.cs">
-      <DependentUpon>DataSetTest.xaml</DependentUpon>
+    <Compile Include="CheckboxTreeView.xaml.cs">
+      <DependentUpon>CheckboxTreeView.xaml</DependentUpon>
     </Compile>
     <Compile Include="HierachicalDataTemplateTest.xaml.cs">
       <DependentUpon>HierachicalDataTemplateTest.xaml</DependentUpon>
@@ -64,7 +64,8 @@
     <Compile Include="SimpleTreeView.xaml.cs">
       <DependentUpon>SimpleTreeView.xaml</DependentUpon>
     </Compile>
-    <Page Include="DataSetTest.xaml">
+    <Compile Include="TreeItem.cs" />
+    <Page Include="CheckboxTreeView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
