@@ -12,8 +12,15 @@ namespace A_TreeView
     {
         /// <summary>
         /// 节点文字
+        /// 文件夹名称
         /// </summary>
         public string Text { get; set; }
+
+        /// <summary>
+        /// 节点路径
+        /// 文件夹路径
+        /// </summary>
+        public string DirPath { get; set; }
 
         /// <summary>
         /// 父节点
@@ -24,7 +31,7 @@ namespace A_TreeView
         /// 子节点
         /// </summary>
         public ObservableCollection<TreeItem> Children { get; set; }
-        //ObservableCollection 在需要跟踪集合变化并自动在 UI 中反映这些变化的场景中非常有用。
+        //ObservableCollection 在需要跟踪集合变化并自动在 UI 中反映这些变化的场景中非常有用
         //它实现了 INotifyCollectionChanged 接口，该接口在集合中添加、移除或修改项时提供通知
 
         /// <summary>
@@ -44,9 +51,10 @@ namespace A_TreeView
         /// 构造函数
         /// </summary>
         /// <param name="name">节点名称</param>
-        public TreeItem(string name)
+        public TreeItem(string name, string path)
         {
             Text = name;
+            DirPath = path;
             Children = new ObservableCollection<TreeItem>();
         }
 
@@ -64,7 +72,7 @@ namespace A_TreeView
 
             // 对于子节点,如果有值且需要,则递归更新
             if (updateChildren && _isChecked.HasValue)
-                Children.ToList().ForEach(item => item.SetCheckState(_isChecked,true,false));
+                Children.ToList().ForEach(item => item.SetCheckState(_isChecked, true, false));
 
             // 对于父节点,如果父节点不为空且有需要,则递归更新
             if (updateParent && Parent != null)
@@ -91,7 +99,7 @@ namespace A_TreeView
                 }
             }
             // 递归更新父节点
-            SetCheckState(parentState,false);
+            SetCheckState(parentState, false);
         }
 
         /// <summary>
@@ -107,7 +115,7 @@ namespace A_TreeView
         /// <param name="propName"></param>
         void OnPropertyChanged(string propName)
         {
-            if(PropertyChanged != null)
+            if (PropertyChanged != null)
             {
                 PropertyChanged(this, new PropertyChangedEventArgs(propName));
             }
