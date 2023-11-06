@@ -34,6 +34,13 @@ namespace A_TreeView
         //ObservableCollection 在需要跟踪集合变化并自动在 UI 中反映这些变化的场景中非常有用
         //它实现了 INotifyCollectionChanged 接口，该接口在集合中添加、移除或修改项时提供通知
 
+        bool _isEnable = true;
+        public bool IsEnable
+        {
+            get { return _isEnable; }
+            set { _isEnable = value; }
+        }
+
         /// <summary>
         /// 节点选择状态
         /// </summary>

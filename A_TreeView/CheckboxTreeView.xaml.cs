@@ -26,7 +26,39 @@ namespace A_TreeView
         {
             InitializeComponent();
             InitTree();
+            //InitTreeTest();
             folderTree.ItemsSource = treeItems;
+        }
+
+        void InitTreeTest()
+        {
+            treeItems = new List<TreeItem>();
+            TreeItem t1 = new TreeItem("生产院1","");
+
+            TreeItem t1p1 = new TreeItem("项目1", "");
+            t1p1.Parent = t1;
+            t1.Children.Add(t1p1);
+
+            TreeItem t1p1s1 = new TreeItem("阶段1", "");
+            t1p1s1.Parent = t1p1;
+            t1p1.Children.Add(t1p1s1);
+
+            TreeItem t1p2 = new TreeItem("项目2", "");
+            t1p2.Parent = t1;
+            t1.Children.Add(t1p2);
+
+            TreeItem t2 = new TreeItem("生产院2", "");
+            t2.IsEnable = false;
+            TreeItem t2p1 = new TreeItem("项目1", "");
+            t2p1.Parent = t2;
+            t2.Children.Add(t2p1);
+
+
+            TreeItem t3 = new TreeItem("生产院3", "");
+
+            treeItems.Add(t1);
+            treeItems.Add(t2);
+            treeItems.Add(t3);
         }
 
         /// <summary>
