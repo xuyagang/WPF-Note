@@ -26,6 +26,9 @@ namespace A_WPF中驻留Windows窗体控件
         public MainWindow()
         {
             InitializeComponent();
+
+            // 默认显示windwos窗体控件的旧样式，为了支持新的风格，必须明确调用EnableVisualStyles()
+            System.Windows.Forms.Application.EnableVisualStyles();
         }
 
         private void askedTextBox_MaskInputRejected(object sender, System.Windows.Forms.MaskInputRejectedEventArgs e)
