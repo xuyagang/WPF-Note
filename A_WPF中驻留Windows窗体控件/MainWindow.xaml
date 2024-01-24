@@ -13,11 +13,19 @@
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition Width="10"></ColumnDefinition>
         </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="10"></RowDefinition>
+        </Grid.RowDefinitions>
         
         <!--需要引用：windowsformsintegration.dll 和 system.windows.forms.dll-->
         <!--创建名称空间：wf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"-->
         <WindowsFormsHost Grid.Column="1" Height="50">
-            <wf:MaskedTextBox Name="askedTextBox" ></wf:MaskedTextBox>
+            <wf:MaskedTextBox Name="askedTextBox" Mask="(999)-000-0000" MaskInputRejected="askedTextBox_MaskInputRejected"></wf:MaskedTextBox>
         </WindowsFormsHost>
+
+        <TextBox Grid.Row="1" Grid.Column="1" x:Name="tb"></TextBox>
     </Grid>
 </Window>

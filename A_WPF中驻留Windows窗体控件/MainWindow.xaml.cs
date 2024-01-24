@@ -27,5 +27,10 @@ namespace A_WPF中驻留Windows窗体控件
         {
             InitializeComponent();
         }
+
+        private void askedTextBox_MaskInputRejected(object sender, System.Windows.Forms.MaskInputRejectedEventArgs e)
+        {
+            tb.Text = "Error:" + e.RejectionHint.ToString();
+        }
     }
 }
