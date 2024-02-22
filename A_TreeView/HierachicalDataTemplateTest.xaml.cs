@@ -32,27 +32,27 @@ namespace A_TreeView
             {
                 Name = "一级",
                 Children = new List<DefinitionNode>()
-            {
-                new DefinitionNode()
                 {
-                    Name = "二级",
-                    Children = new List<DefinitionNode>()
+                    new DefinitionNode()
                     {
-                        new DefinitionNode() {Name = "三级" },
-                        new DefinitionNode() {Name = "三级" }
+                        Name = "二级",
+                        Children = new List<DefinitionNode>()
+                        {
+                            new DefinitionNode() {Name = "三级" },
+                            new DefinitionNode() {Name = "三级" }
+                        }
                     }
                 }
-            }
             };
 
             DefinitionNode dNode2 = new DefinitionNode()
             {
                 Name = "一级",
                 Children = new List<DefinitionNode>()
-            {
-                new DefinitionNode { Name = "二级" },
-                new DefinitionNode {Name = "二级" }
-            }
+                {
+                    new DefinitionNode { Name = "二级" },
+                    new DefinitionNode {Name = "二级" }
+                }
             };
             List<DefinitionNode> list = new List<DefinitionNode> { dNode, dNode2 };
             treeView.ItemsSource = list;
@@ -66,6 +66,6 @@ namespace A_TreeView
         public IList<DefinitionNode> Children { get; set; }
     }
 
-    
+
 
 }
