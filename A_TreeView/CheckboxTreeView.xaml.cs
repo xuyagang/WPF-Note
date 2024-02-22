@@ -67,7 +67,7 @@ namespace A_TreeView
         void InitTree()
         {
             treeItems = new List<TreeItem>();
-            string rootPath = @"F:\DrawingChecker\TestData\生产院";
+            string rootPath = @"G:\Revit插件";
             DirectoryInfo rootInfo = new DirectoryInfo(rootPath);
             DirectoryInfo[] dirs = rootInfo.GetDirectories();
             dirs = dirs.OrderBy(x => x.Name, new PathHelper()).ToArray();
