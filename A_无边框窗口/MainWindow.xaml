@@ -5,11 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:A_无边框窗口"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" 
-        WindowStyle="None" 
+        Title="MainWindow" Height="450" Width="800"
+        WindowStyle="None"
         AllowsTransparency="False"
         >
     <Grid>
-        
+        <!--https://www.cnblogs.com/Bonker/p/4401871.html-->
+
+        <Button Name="ShowPopupButton" Content="Show Popup" Width="100" Height="30" Click="ShowPopupButton_Click"/>
+        <Popup Name="SimplePopup" PlacementTarget="{Binding ElementName=ShowPopupButton}" Placement="Bottom" StaysOpen="False">
+            <Border BorderBrush="Black" BorderThickness="1" Background="LightYellow">
+                <StackPanel Margin="5">
+                    <TextBlock Text="This is a Popup" Margin="5"/>
+                    <Button Content="Close" Width="50" Click="ClosePopupButton_Click"/>
+                </StackPanel>
+            </Border>
+        </Popup>
     </Grid>
 </Window>

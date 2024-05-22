@@ -24,5 +24,15 @@ namespace A_无边框窗口
         {
             InitializeComponent();
         }
+
+        private void ShowPopupButton_Click(object sender, RoutedEventArgs e)
+        {
+            SimplePopup.IsOpen = true;
+        }
+
+        private void ClosePopupButton_Click(object sender, RoutedEventArgs e)
+        {
+            SimplePopup.IsOpen = false;
+        }
     }
 }

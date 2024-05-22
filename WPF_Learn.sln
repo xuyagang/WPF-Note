@@ -63,7 +63,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A_DispatcherFrameAndAsync",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A_DispatcherFrameTest", "A_DispatcherFrameTest\A_DispatcherFrameTest.csproj", "{32BC082A-1625-4D31-9B79-C539EB2DFB67}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A_无边框窗口", "A_无边框窗口\A_无边框窗口.csproj", "{2814ECD1-2080-46AC-8C81-4E7394E3837F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A_无边框窗口和popup控件", "A_无边框窗口\A_无边框窗口和popup控件.csproj", "{2814ECD1-2080-46AC-8C81-4E7394E3837F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A_ToolBarAndToolBarTray", "A_ToolBarAndToolBarTray\A_ToolBarAndToolBarTray.csproj", "{FBB4E15F-BE96-42B7-AF8B-C063BF4742D2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -195,6 +197,10 @@ Global
 		{2814ECD1-2080-46AC-8C81-4E7394E3837F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2814ECD1-2080-46AC-8C81-4E7394E3837F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2814ECD1-2080-46AC-8C81-4E7394E3837F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBB4E15F-BE96-42B7-AF8B-C063BF4742D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBB4E15F-BE96-42B7-AF8B-C063BF4742D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBB4E15F-BE96-42B7-AF8B-C063BF4742D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBB4E15F-BE96-42B7-AF8B-C063BF4742D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
