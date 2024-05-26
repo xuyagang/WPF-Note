@@ -24,6 +24,8 @@
             </Setter>
         </Style>-->
 
+
+
     </Window.Resources>
     
     <Grid>
@@ -48,6 +50,7 @@
             <Button Content="粘贴" Click="Button_Click" />
         </ToolBar>
 
+        <StackPanel Orientation="Horizontal"></StackPanel>
 
         <!--<ToolBarTray Orientation="Horizontal" Background="LightCyan" IsLocked="False">
             <ToolBar Band="0" BandIndex="1" HorizontalAlignment="Left" Height="21" VerticalAlignment="Top"  IsOverflowOpen="True" Margin="0.2,0,-19.4,0" Width="100" >
@@ -103,5 +106,9 @@
                 <Button Content="剪切"/>
             </ToolBar>
         </ToolBarTray>-->
+        
+        
+        
+        
     </Grid>
 </Window>
